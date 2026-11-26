@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# local scratch, not part of the font
+variants/
+anco-heist/
+ancoHeist/
+anco-heist.zip
+scripts/scan_ref.py
+scripts/refglyphs.py
+scripts/probe_stems.py
+scripts/variants.py
+scripts/ladder.py
+scripts/closeup.py
+scripts/letters.py
+scripts/sheet.py

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Anco Heist tester</title>
+<style>
+  @font-face {
+    font-family: "Anco Heist";
+    src: url("../fonts/webfonts/AncoHeist-Black.woff2") format("woff2");
+  }
+  body { background: #111; color: #f2f2f2; font-family: system-ui, sans-serif; margin: 40px; }
+  .controls { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; color: #999; }
+  .sample { font-family: "Anco Heist"; line-height: 1.15; outline: none; margin: 0 0 24px; }
+  .wasted { color: #c62828; letter-spacing: 0.02em; }
+  .money { color: #3fae4a; }
+</style>
+</head>
+<body>
+  <div class="controls">
+    <label>Size <input id="size" type="range" min="16" max="220" value="96"></label>
+    <span id="px">96px</span>
+    <label>Tracking <input id="track" type="range" min="-50" max="200" value="0"></label>
+  </div>
+  <div class="sample" contenteditable="true">ANCO HEIST</div>
+  <div class="sample wasted" contenteditable="true">WASTED</div>
+  <div class="sample money" contenteditable="true">$1,250,000</div>
+  <div class="sample" contenteditable="true">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 $₺%#!?.,:;'"()[]+=*/</div>
+  <div class="sample" contenteditable="true">ÇĞİÖŞÜ çğıöşü Çömlekçi</div>
+  <script>
+    const size = document.getElementById("size"), track = document.getElementById("track"), px = document.getElementById("px");
+    function apply() {
+      document.querySelectorAll(".sample").forEach(el => {
+        el.style.fontSize = size.value + "px";
+        el.style.letterSpacing = (track.value / 1000) + "em";
+      });
+      px.textContent = size.value + "px";
+    }
+    size.oninput = track.oninput = apply;
+    apply();
+  </script>
+</body>
+</html>

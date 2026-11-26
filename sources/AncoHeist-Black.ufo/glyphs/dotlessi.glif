@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotlessi" format="2">
+  <advance width="257"/>
+  <unicode hex="0131"/>
+  <outline>
+    <contour>
+      <point x="26" y="645" type="curve" smooth="yes"/>
+      <point x="26" y="5" type="line" smooth="yes"/>
+      <point x="26" y="4"/>
+      <point x="26" y="2"/>
+      <point x="27" y="1" type="curve" smooth="yes"/>
+      <point x="28" y="0"/>
+      <point x="30" y="0"/>
+      <point x="31" y="0" type="curve" smooth="yes"/>
+      <point x="226" y="0" type="line" smooth="yes"/>
+      <point x="227" y="0"/>
+      <point x="229" y="0"/>
+      <point x="230" y="1" type="curve" smooth="yes"/>
+      <point x="231" y="2"/>
+      <point x="231" y="4"/>
+      <point x="231" y="5" type="curve" smooth="yes"/>
+      <point x="231" y="645" type="line" smooth="yes"/>
+      <point x="231" y="646"/>
+      <point x="231" y="648"/>
+      <point x="230" y="649" type="curve" smooth="yes"/>
+      <point x="229" y="650"/>
+      <point x="227" y="650"/>
+      <point x="226" y="650" type="curve" smooth="yes"/>
+      <point x="31" y="650" type="line" smooth="yes"/>
+      <point x="30" y="650"/>
+      <point x="28" y="650"/>
+      <point x="27" y="649" type="curve" smooth="yes"/>
+      <point x="26" y="648"/>
+      <point x="26" y="646"/>
+    </contour>
+  </outline>
+</glyph>

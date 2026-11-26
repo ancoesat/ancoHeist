@@ -1,0 +1,5 @@
+fontmake>=3.9
+fonttools[woff]>=4.50
+ufoLib2>=0.16
+skia-pathops>=0.8
+pillow>=10
